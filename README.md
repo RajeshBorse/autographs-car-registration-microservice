@@ -7,17 +7,19 @@ As per the project requirements, we are expected to display the cloud-based data
 
 ## Microservice
 
-Autographs Car Registration Microservice - This is a spring-boot java microservice which has RESTful APIs which will be used by the android mobile application for displaying the charts in the frontend systems based on the service response.
+Autographs CAR Registration Microservice - This is a spring-boot java microservice which has RESTful APIs which will be used by the android mobile application for displaying the charts in the frontend systems based on the service response.
 
 Below are the services that this microservice serves.
 
-- New Car Registrations. 
-- New Car Registrations by Fuel Type. 
-- New Car Registrations by Sales Type. 
+- New CAR Registrations.
+- New CAR Registrations by Fuel Type.
+- New CAR Registrations by Sales Type.
 
 Below are the endpoints that are exposed by this microservice.
 
-- GET API Endpoint - Used for fetching all the car registration data from the MongoDB database.
+## New CAR Registrations
+
+- GET API Endpoint - Used for fetching all the CAR registration data from the MongoDB database.
 
 
 ```bash
@@ -25,14 +27,51 @@ Below are the endpoints that are exposed by this microservice.
 ```
 
 
-- POST API Endpoint - Used for inserting all the car registration data in the MongoDB database.
+- POST API Endpoint - Used for inserting all the CAR registration data in the MongoDB database.
 
 ```bash
 /api/v1/newCarRegistrations/addNewCarRegistrationsData
 ```
 
 
-- DELETE API Endpoint - Used for deleting all the car registrations in the MongoDB database.
+- DELETE API Endpoint - Used for deleting all the CAR registrations in the MongoDB database.
 ```bash
 /api/v1/newCarRegistrations/deleteAllNewCarRegistrationsData
 ```
+
+
+## New CAR Registrations by Fuel Type
+
+- GET API Endpoint - Used for fetching all the CAR Registrations by Fuel Type data from the MongoDB database.
+
+```bash
+/api/v1/newCarRegistrations/getAllNewCarRegistrationsByFuelTypeData
+```
+
+- POST API Endpoint - Used for inserting all the CAR Registrations by Fuel Type data in the MongoDB database.
+
+```bash
+/api/v1/newCarRegistrations/addNewCarRegistrationsByFuelTypeData
+```
+
+- DELETE API Endpoint - Used for deleting all the CAR Registrations by Fuel Type data in the MongoDB database.
+```bash
+/api/v1/newCarRegistrations/deleteAllNewCarRegistrationsByFuelTypeData
+```
+
+## New CAR Registrations by Sales Type
+- GET API Endpoint - Used for fetching all the CAR Registrations by Sales Type data from the MongoDB database.
+
+```bash
+/api/v1/newCarRegistrations/getAllNewCarRegistrationsBySalesTypeData
+```
+
+- POST API Endpoint - Used for inserting all the CAR Registrations by Sales Type data in the MongoDB database.
+
+```bash
+/api/v1/newCarRegistrations/addNewCarRegistrationsBySalesTypeData
+```
+
+- DELETE API Endpoint - Used for deleting all the CAR Registrations by Sales Type data in the MongoDB database.
+```bash
+/api/v1/newCarRegistrations/deleteAllNewCarRegistrationsBySalesTypeData

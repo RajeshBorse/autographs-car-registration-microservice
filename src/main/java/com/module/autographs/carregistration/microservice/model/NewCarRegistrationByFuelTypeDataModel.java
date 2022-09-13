@@ -3,7 +3,7 @@ package com.module.autographs.carregistration.microservice.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "NewCarRegistrationByFuelTypeCollection")
+@Document(collection = "fuelTypeCollection")
 public class NewCarRegistrationByFuelTypeDataModel {
 
     @Id
